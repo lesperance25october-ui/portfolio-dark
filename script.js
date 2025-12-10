@@ -1,10 +1,7 @@
-const incomeInput = document.getElementById('income');
-const expenseInput = document.getElementById('expense');
-const balanceInput = document.getElementById('balance');
-const calculateBtn = document.getElementById('calculate');
-
-calculateBtn.addEventListener('click', () => {
-    const income = parseFloat(incomeInput.value) || 0;
-    const expense = parseFloat(expenseInput.value) || 0;
-    balanceInput.value = income - expense;
+document.querySelectorAll("nav ul li a").forEach(link => {
+    link.addEventListener("click", function(e) {
+        e.preventDefault();
+        const section = document.querySelector(this.getAttribute("href"));
+        section.scrollIntoView({ behavior: "smooth" });
+    });
 });
