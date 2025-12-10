@@ -1,111 +1,60 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
 body {
-    background: #0a0a0a;
-    color: #e0e0e0;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
     padding: 20px;
-    background: #111;
-    position: sticky;
-    top: 0;
 }
 
-nav .logo {
-    color: #00ff6a;
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 1px;
+h1 {
+    text-align: center;
+    color: #333;
 }
 
-nav ul {
-    list-style: none;
+.tracker-container {
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: #e0e0e0;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-nav ul li a:hover {
-    color: #00ff6a;
-}
-
-.hero {
-    height: 100vh;
+.tracker-box {
+    background-color: lightskyblue;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1 1 calc(50% - 10px); /* Two boxes per row */
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
-.hero h1 span {
-    color: #00ff6a;
-}
-
-.h2-text-color {
-    color: #00ff6a;
-    padding-bottom: 10px;
-}
-
-.btn {
-    padding: 10px 20px;
-    background: #00ff6a;
-    color: #000;
-    margin-top: 20px;
-    text-decoration: none;
-    border-radius: 5px;
+.tracker-box label {
+    margin-bottom: 5px;
     font-weight: bold;
 }
 
-.about, .projects, .contact {
-    padding: 60px 10%;
+.tracker-box input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
-.skills li {
-    margin: 8px 0;
+.tracker-box button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0077cc;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
 }
 
-.h3-text-color {
-    color: #00ff6a;
-    font-size: 24px;
-    margin-top: 24px;
+.tracker-box button:hover {
+    background-color: #005fa3;
 }
 
-.project-card {
-    border: 1px solid #00ff6a;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-    background: #111;
-    transition: 0.3s;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    border-color: #0aff9d;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #111;
-    color: #666;
-    margin-top: 40px;
+/* Make last box full width if needed */
+.full-width {
+    flex: 1 1 100%;
 }
