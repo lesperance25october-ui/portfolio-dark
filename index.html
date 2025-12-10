@@ -3,32 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expense Tracker</title>
+    <title>Emiliano — Junior Developer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Expense Tracker</h1>
 
-    <div class="tracker-container">
-        <div class="tracker-box">
-            <label for="income">Income:</label>
-            <input type="number" id="income" placeholder="Enter income">
+    <nav>
+        <h2 class="logo">Emiliano.dev</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <h1>Hi, I'm <span>Emiliano</span></h1>
+        <p>Junior Software & Web Developer from Seychelles.</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            I'm a young developer passionate about building tools,
+            automation, AI assistants, and web applications.  
+            I enjoy solving real problems and bringing ideas to life —
+            from SeyBot AI to web utilities and digital innovations.
+        </p>
+        <h3>Skills</h3>
+        <ul class="skills">
+            <li>HTML / CSS / JavaScript</li>
+            <li>Python</li>
+            <li>APIs</li>
+            <li>UI/UX</li>
+            <li>Basic Cybersecurity</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+
+        <div class="project-card">
+            <h3>SeyBot — Creole AI Assistant</h3>
+            <p>An AI chatbot built to help Seychellois youth with school,
+               culture and tech support. Web version + terminal version.</p>
         </div>
 
-        <div class="tracker-box">
-            <label for="expense">Expense:</label>
-            <input type="number" id="expense" placeholder="Enter expense">
+        <div class="project-card">
+            <h3>EduCreole</h3>
+            <p>A Creole-based learning platform for A-Level students,
+               including flashcards and interactive tools.</p>
         </div>
 
-        <div class="tracker-box full-width">
-            <label for="balance">Balance:</label>
-            <input type="number" id="balance" placeholder="Balance" readonly>
+        <div class="project-card">
+            <h3>Coming Soon: Seychelles Expense Tracker</h3>
+            <p>Track monthly expenses, categories, and saving goals using
+               localStorage.</p>
         </div>
 
-        <div class="tracker-box full-width">
-            <button id="calculate">Calculate</button>
-        </div>
-    </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <b>your-email@example.com</b></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Emiliano — Portfolio Website</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
